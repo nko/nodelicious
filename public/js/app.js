@@ -401,6 +401,7 @@ Animation.prototype.draw = function(ctx, x, y, scale, flip) {
   Player.prototype.push = function() {
     var data = {method: "position", args: [this.id, this.x, this.y] }
     if (!this.DEAD && this.y > level.deathline){
+      console.log("deather")
       this.DEAD = true
       data = [data, {method: "die", args:[this.lastHitBy || this.id]}];
     }
@@ -557,7 +558,7 @@ Player.prototype.draw = function(ctx, ox, oy, scale) {
 	];
 	   
      
-  var SINGLE_USER = true;//false;
+  var SINGLE_USER = false;
   
   //camera.target = player;
   
