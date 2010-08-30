@@ -1,5 +1,5 @@
 global.MAX_FIGHTERS = 10
-global.FIGHT_COUNTDOWN_SECS = 3 // 30
+global.FIGHT_COUNTDOWN_SECS = 10 // 30
 global.FIGHT_LENGTH_SECS = 77
 
 require.paths.unshift(
